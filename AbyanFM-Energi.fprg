@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="AbyanFM-Energi"/>
+        <attribute name="authors" value="abyan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-14 11:53:04 AM"/>
+        <attribute name="created" value="YWJ5YW47TVNJOzIwMjUtMDktMTM7MTI6Mjk6MzUgQU07MjAyOQ=="/>
+        <attribute name="edited" value="YWJ5YW47TVNJOzIwMjUtMDktMTQ7MTE6NTM6MDQgQU07MjsyMTMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="m, v, h, g, Ep, Ek, Em" type="Real" array="False" size=""/>
+            <assign variable="g" expression="10"/>
+            <output expression="&quot;massa = &quot;" newline="True"/>
+            <input variable="m"/>
+            <output expression="&quot;kecepatan = &quot;" newline="True"/>
+            <input variable="v"/>
+            <output expression="&quot;ketinggian = &quot;" newline="True"/>
+            <input variable="h"/>
+            <assign variable="Ep" expression="m * g * h"/>
+            <output expression="&quot;Energi potensial = &quot; &amp; Ep" newline="True"/>
+            <assign variable="Ek" expression="1/2 * m * v^2"/>
+            <output expression="&quot;Energi kinetik = &quot; &amp; Ek" newline="True"/>
+            <assign variable="Em" expression="Ep + Ek"/>
+            <output expression="&quot;Energi mekanik = &quot; &amp; Em" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
